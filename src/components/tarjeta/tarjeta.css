@@ -1,0 +1,133 @@
+.contenedor-tarjeta__tarjeta {
+  height: 270px;
+  width: 450px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+}
+.contenedor-tarjeta__tarjeta:hover {
+  -webkit-box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.75);
+}
+.tarjeta__nombre-banco {
+  color: white;
+}
+.tarjeta__icono-chip {
+  width: 16%;
+}
+.tarjeta__nombre-banco {
+  text-align: end;
+  font-size: 2rem;
+  margin: 0px !important;
+}
+.tarjeta__input-numero-tarjeta {
+  font-family: 'Roboto Mono', monospace !important;
+  width: 100%;
+  height: 46px;
+  margin-top: 14px;
+  color: white;
+  font-size: 1.8rem;
+  background-color: rgba(245, 222, 179, 0);
+  border: none;
+  border-bottom: solid 1px white;
+}
+.tarjeta__input-numero-tarjeta::placeholder {
+  color: white;
+}
+.tarjeta__input-numero-tarjeta:focus-visible {
+  outline: none !important;
+}
+
+.tarjeta__contenedor-fecha-nombre {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tarjeta__contenedor-fecha-nombre input {
+  font-family: 'Roboto Mono', monospace !important;
+  margin-top: 40px;
+  color: white;
+  font-size: 1rem;
+  background-color: rgba(245, 222, 179, 0);
+  border: none;
+  border-bottom: solid 1px white;
+  height: 20px;
+}
+.tarjeta__contenedor-fecha-nombre input::placeholder {
+  color: white;
+}
+.tarjeta__contenedor-fecha-nombre input:focus-visible {
+  outline: none !important;
+}
+.contenedor-fecha-nombre__nombre {
+  width: 60%;
+}
+.contenedor-fecha-nombre__fecha {
+  width: 20%;
+}
+
+/* Tableta */
+@media (max-width: 900px) {
+  .contenedor-tarjeta__tarjeta {
+    height: 415px;
+    width: 693px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+  }
+  .tarjeta__icono-chip {
+    width: 20%;
+  }
+  .tarjeta__nombre-banco {
+    font-size: 2.6rem;
+  }
+  .tarjeta__input-numero-tarjeta {
+    height: 54px;
+    font-size: 2.2rem;
+  }
+  .tarjeta__contenedor-fecha-nombre input {
+    margin-top: 60px;
+    font-size: 1.8rem;
+    height: 44px;
+  }
+}
+
+/* Movil */
+@media (max-width: 420px) {
+  .contenedor-tarjeta__tarjeta {
+    height: 200px;
+    width: 330px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+  }
+  .tarjeta__icono-chip {
+    width: 12%;
+  }
+  .tarjeta__nombre-banco {
+    font-size: 1.2rem;
+  }
+  .tarjeta__input-numero-tarjeta {
+    height: 30px;
+    font-size: 1.2rem;
+  }
+  .tarjeta__contenedor-fecha-nombre input {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    height: 40px;
+  }
+}
